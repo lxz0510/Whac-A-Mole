@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whac-A-Mole</title>
+    <link rel="stylesheet" href="index.css" >
+    <script src="index.js" async></script>
+</head>
+<body>
+    <h1>Whac-A-Mole</h1>
+    <div class="wrap">
+        <a href="#" class="start" id = "start" >START GAME</a>
+        <div class="board">  
+            <table>
+                <tr>
+                    <td><img src="images/appear4.png" alt="" class="img0"></td>
+                    <td><img src="images/appear4.png" alt="" class="img1"></td>
+                    <td><img src="images/appear4.png" alt="" class="img2"></td>
+                </tr>
+                <tr>
+                    <td><img src="images/appear4.png" alt="" class="img3"></td>
+                    <td><img src="images/appear4.png" alt="" class="img4"></td>
+                    <td><img src="images/appear4.png" alt="" class="img5"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <h3>
+        Seconds Left: <span id = "timer">60</span>
+    </h3>   
+    <h3>
+        Points: <span id = "points"></span>
+    </h3>
+    <!-- 弹窗 -->
+    <div id="myModal" class="modal">
+        <!-- 弹窗内容 -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Game Over</p>
+            <button id="myBtn" class="myBtn">New Game</button>
+        </div>
+    </div>
+</body>
+</html>
